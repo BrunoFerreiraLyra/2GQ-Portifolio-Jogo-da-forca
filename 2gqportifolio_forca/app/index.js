@@ -16,9 +16,9 @@ export default function Home() {
   
       <View style={styles.header}>
         <View style={styles.imageContainer}>
-          {/* Mantém a logo provisória, depois coloque sua foto em assets/images/foto-perfil.png */}
+          
           <Image
-            source={require('../assets/images/react-logo.png')} 
+            source={require('../assets/images/foto-perfil.png')} 
             style={styles.profileImage}
             resizeMode="cover"
           />
