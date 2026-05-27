@@ -38,7 +38,7 @@ export default function Home() {
 
 
       <View style={styles.secao}>
-        <Text style={styles.tituloSecao}>ABOUT ME</Text>
+        <Text style={styles.tituloSecao}>SOBRE MIM</Text>
         <View style={styles.linhaDivisoria} />
         <Text style={styles.textoDescricao}>
           Me chamo Bruno. Tenho 20 anos. Atualmente estou cursando o 5º período de Ciência da Computação na UNICAP.
@@ -110,7 +110,7 @@ export default function Home() {
       <View style={styles.forcaActionContainer}>
         <Link href="/forca" asChild>
           <TouchableOpacity style={styles.botaoJogo}>
-            <Text style={styles.textoBotaoJogo}>🎮 Iniciar Jogo da Forca Nativo</Text>
+            <Text style={styles.textoBotaoJogo}> Iniciar Jogo da Forca Nativo</Text>
           </TouchableOpacity>
         </Link>
       </View>
