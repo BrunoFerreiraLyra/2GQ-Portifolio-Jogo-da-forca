@@ -18,8 +18,8 @@ export default function Academico() {
 
 const styles = StyleSheet.create({
   container: { flexGrow: 1, padding: 25, backgroundColor: '#ffffff' },
-  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#1f2937', letterSpacing: 1, marginTop: 10 },
-  linhaDivisoria: { height: 1.5, backgroundColor: '#1f2937', marginVertical: 15, width: '100%' },
+  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#3b82f6', letterSpacing: 1, marginTop: 10 },
+  linhaDivisoria: { height: 1.5, backgroundColor: '#3b82f6', marginVertical: 15, width: '100%' },
   itemContainer: { marginBottom: 20 },
   instituicao: { fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 5 },
   curso: { fontSize: 16, color: '#4b5563', marginBottom: 5 },

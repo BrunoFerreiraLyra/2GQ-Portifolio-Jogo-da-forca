@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
   nome: { fontSize: 24, fontWeight: 'bold', color: '#111827' },
   cargo: { fontSize: 16, color: '#6b7280', marginBottom: 30 },
   menu: { width: '100%', gap: 15 },
-  button: { backgroundColor: '#111827', padding: 18, borderRadius: 12, alignItems: 'center' },
+  button: { backgroundColor: '#3b82f6', padding: 18, borderRadius: 12, alignItems: 'center' },
   buttonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' }
 });

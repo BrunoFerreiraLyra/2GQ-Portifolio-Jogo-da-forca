@@ -6,11 +6,10 @@ export default function Projetos() {
     Linking.openURL(url).catch((err) => console.error("Erro ao abrir o link:", err));
   };
 
-  const ProjetoItem = ({ nome, tech, link }) => (
+  const ProjetoItem = ({ nome, link }) => (
     <View style={styles.projetoItem}>
       <View style={styles.projetoTextoContainer}>
         <Text style={styles.projetoNome}>{nome}</Text>
-        <Text style={styles.projetoTech}>{tech}</Text>
       </View>
       <TouchableOpacity style={styles.botaoGithub} onPress={() => abrirLinkExterno(link)}>
         <Text style={styles.textoBotaoGithub}>GitHub 🔗</Text>
@@ -25,23 +24,19 @@ export default function Projetos() {
 
       <ProjetoItem 
         nome="Projeto Java" 
-        tech="Java / Backend" 
         link="https://github.com/BrunoFerreiraLyra/Projeto-Java" 
       />
       <ProjetoItem 
         nome="Cubo Mágico 3D" 
-        tech="Graphics / 3D Geometry" 
         link="https://github.com/BrunoFerreiraLyra/Cubo_Magico_3D" 
       />
       <ProjetoItem 
-        nome="Projeto Integrador Cellabox" 
-        tech="Full Stack / Mobile / Web" 
+        nome="Projeto Integrador" 
         link="https://github.com/BrunoFerreiraLyra/Projeto-Integrador-Cellabox" 
       />
       <ProjetoItem 
         nome="Team Build Pokemon" 
-        tech="Strategy / Data Analysis" 
-        link="https://github.com/BrunoFerreiraLyra" 
+        link="https://github.com/D4n1el20/team-build-pokemon-1gq." 
       />
     </ScrollView>
   );
@@ -49,12 +44,11 @@ export default function Projetos() {
 
 const styles = StyleSheet.create({
   container: { flexGrow: 1, padding: 25, backgroundColor: '#ffffff' },
-  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#1f2937', letterSpacing: 1, marginTop: 10 },
-  linhaDivisoria: { height: 1.5, backgroundColor: '#1f2937', marginVertical: 15, width: '100%' },
+  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#111827', letterSpacing: 1, marginTop: 10 },
+  linhaDivisoria: { height: 1.5, backgroundColor: '#3b82f6', marginVertical: 15, width: '100%' },
   projetoItem: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 15, borderBottomWidth: 1, borderBottomColor: '#f3f4f6' },
   projetoTextoContainer: { flex: 1, paddingRight: 10 },
   projetoNome: { fontSize: 16, fontWeight: '600', color: '#111827' },
-  projetoTech: { fontSize: 13, color: '#9ca3af', marginTop: 4 },
   botaoGithub: { paddingVertical: 8, paddingHorizontal: 12, backgroundColor: '#f3f4f6', borderRadius: 6, borderWidth: 1, borderColor: '#d1d5db' },
   textoBotaoGithub: { fontSize: 12, fontWeight: '600', color: '#374151' },
 });
