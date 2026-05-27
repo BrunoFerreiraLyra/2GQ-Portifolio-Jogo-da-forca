@@ -2,6 +2,7 @@
   "expo": {
     "name": "2gqportifolio_forca",
     "slug": "2gqportifolio_forca",
+    "owner": "2gqbruno",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
