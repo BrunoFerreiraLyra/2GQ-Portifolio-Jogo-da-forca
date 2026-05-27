@@ -6,10 +6,11 @@ export default function Projetos() {
     Linking.openURL(url).catch((err) => console.error("Erro ao abrir o link:", err));
   };
 
-  const ProjetoItem = ({ nome, link }) => (
+  const ProjetoItem = ({ nome, tech, link }) => (
     <View style={styles.projetoItem}>
       <View style={styles.projetoTextoContainer}>
         <Text style={styles.projetoNome}>{nome}</Text>
+        <Text style={styles.projetoTech}>{tech}</Text>
       </View>
       <TouchableOpacity style={styles.botaoGithub} onPress={() => abrirLinkExterno(link)}>
         <Text style={styles.textoBotaoGithub}>GitHub 🔗</Text>
@@ -44,11 +45,12 @@ export default function Projetos() {
 
 const styles = StyleSheet.create({
   container: { flexGrow: 1, padding: 25, backgroundColor: '#ffffff' },
-  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#111827', letterSpacing: 1, marginTop: 10 },
-  linhaDivisoria: { height: 1.5, backgroundColor: '#3b82f6', marginVertical: 15, width: '100%' },
+  tituloSecao: { fontSize: 16, fontWeight: 'bold', color: '#1f2937', letterSpacing: 1, marginTop: 10 },
+  linhaDivisoria: { height: 1.5, backgroundColor: '#1f2937', marginVertical: 15, width: '100%' },
   projetoItem: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 15, borderBottomWidth: 1, borderBottomColor: '#f3f4f6' },
   projetoTextoContainer: { flex: 1, paddingRight: 10 },
   projetoNome: { fontSize: 16, fontWeight: '600', color: '#111827' },
+  projetoTech: { fontSize: 13, color: '#9ca3af', marginTop: 4 },
   botaoGithub: { paddingVertical: 8, paddingHorizontal: 12, backgroundColor: '#f3f4f6', borderRadius: 6, borderWidth: 1, borderColor: '#d1d5db' },
   textoBotaoGithub: { fontSize: 12, fontWeight: '600', color: '#374151' },
 });
