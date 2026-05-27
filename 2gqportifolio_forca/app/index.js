@@ -18,7 +18,7 @@ export default function Home() {
         <View style={styles.imageContainer}>
           
           <Image
-            source={require('../assets/images/foto-perfil.png')} 
+            source={require('../assets/images/foto-perfil.jpg')} 
             style={styles.profileImage}
             resizeMode="cover"
           />
